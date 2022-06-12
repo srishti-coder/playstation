@@ -1,0 +1,137 @@
+.footer {
+  overflow: hidden;
+}
+
+.footer_container {
+  row-gap: 2rem;
+}
+
+.footer_title {
+  font-family: var(--tittle-font);
+  font-weight: var(--font-semi-bold);
+  font-size: var(--normal-font-size);
+  line-height: 1.5rem;
+  color: var(--title-color-secondary);
+}
+
+.footer_logo {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: var(--font-semi-bold);
+  font-family: var(--tittle-font);
+  color: var(--title-color);
+}
+
+.footer_logo-img {
+  width: 35px;
+}
+
+.footer_description {
+  font-size: var(--regular-font-size);
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  font-family: var(--paragraphy-font);
+  font-weight: var(--font-regular);
+  line-height: 1.125rem;
+  letter-spacing: 0.013em;
+  width: 320px;
+  color: var(--paragraphy-color-light);
+}
+
+.footer_social {
+  display: flex;
+  column-gap: 0.75rem;
+}
+
+.footer_social-link {
+  display: inline-flex;
+  color: var(--gray-color-fourth);
+  font-size: 1.25rem;
+}
+
+.footer_social-link:hover {
+  color: var(--title-color);
+}
+
+.footer_title {
+  font-size: var(--normal-font-size);
+  margin-bottom: 1.5625rem;
+}
+
+.footer_links {
+  display: grid;
+  row-gap: 1.125rem;
+}
+
+.footer_link {
+  font-family: var(--paragraphy-font);
+  font-weight: var(--font-regular);
+  font-size: var(-normal-font-size);
+  line-height: 1.1875rem;
+  color: var(--paragraphy-color-light);
+  transition: 0.3s;
+}
+
+.footer_link:hover {
+  color: var(--title-color);
+}
+
+.footer_copy {
+  display: block;
+  text-align: center;
+  font-family: var(--paragraphy-font);
+  font-weight: var(--font-regular);
+  font-size: var(--small-font-size);
+  line-height: 1.125rem;
+  letter-spacing: 0.013em;
+  color: rgba(114, 115, 130, 0.8);
+  margin-top: 1.5625rem;
+}
+
+.footer_content {
+  margin-right: 4.1875rem;
+}
+
+.hr_footer {
+  max-width: 990px;
+  margin: 0 auto;
+  margin-top: 6.25rem;
+  margin-bottom: -3.125rem;
+  border: 1px solid #cccccc;
+  position: relative;
+}
+
+.hr_footer-secondary {
+  width: 990px;
+  margin: 0 auto;
+  margin-top: 3.125rem;
+  border: 1px solid #cccccc;
+}
+
+@media screen and (min-width: 576px) {
+  .footer_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .footer_description {
+    margin-bottom: 3.8125rem;
+  }
+  .footer_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .footer_copy {
+    margin-top: 1.875rem;
+  }
+  .footer_container {
+    grid-template-columns: max-content 70px 70px 190px;
+    justify-items: center;
+    column-gap: 6.1875rem;
+  }
+}

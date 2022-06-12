@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--normal-font-size);
+}
+
+body {
+  margin: 3.5rem 0 0 0;
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Dark Mode */
+body.dark-theme {
+  --title-color: #fefefe;
+  --title-color-secondary: #ffffff;
+  --text-color: #8d8ea0;
+  --body-color: #0a081e;
+  --paragraphy-color-light: #9f9cb1;
+  --background-gray: #14131a;
+  --gray-color: transparent;
+  --gray-color-third: #cacaca;
+  --background-gray-secondary: #1c1f28;
+}
+
+/* Header */
+.dark-theme .change-theme:hover,
+.dark-theme .nav_link:hover,
+.dark-theme .nav_logo {
+  color: #f6f6f6;
+}
+
+/* Functions */
+.dark-theme .functions_list {
+  border: 0.0625rem solid #313642;
+}
+
+/* Produts */
+.dark-theme .produts_list {
+  background: radial-gradient(50% 50% at 50% 50%, #20178d 0%, #17124b 100%);
+  backdrop-filter: blur(56px);
+  border-radius: 15px;
+}
+
+/* Faqs */
+.dark-theme .faqs_container {
+  background: rgba(21, 20, 65, 0.2);
+  border: 2px solid rgba(103, 103, 103, 0.3);
+  backdrop-filter: blur(56px);
+}
+
+.dark-theme .faqs_header {
+  border-top: 2px solid rgba(103, 103, 103, 0.3);
+}
+
+.dark-theme .faqs_description {
+  color: #9f9cb1;
+}
+
+.dark-theme .hr_footer,
+.dark-theme .hr_footer-secondary {
+  border: 1px solid rgba(124, 124, 124, 0.19);
+}
+
+/* Contact */
+.dark-theme .form_mensage textarea,
+.dark-theme .form_email input,
+.dark-theme .form_name input,
+.dark-theme .form_name-2 input,
+.dark-theme .form_last-name input,
+.dark-theme .form_cpf input,
+.dark-theme .form_cep input,
+.dark-theme .form_number input,
+.dark-theme .form_place input,
+.dark-theme .form_neighborhood input,
+.dark-theme .form_city input,
+.dark-theme .form_state input {
+  background: rgba(61, 61, 61, 0.05);
+  border: 1px solid rgba(152, 152, 152, 1);
+}
+
+.dark-theme .form_name label,
+.dark-theme .form_email label,
+.dark-theme .form_mensage label,
+.dark-theme .form_cpf label,
+.dark-theme .form_last-name label,
+.dark-theme .form_name-2 label,
+.dark-theme .form_cep label,
+.dark-theme .form_number label,
+.dark-theme .form_place label,
+.dark-theme .form_neighborhood label,
+.dark-theme .form_city label,
+.dark-theme .form_state label {
+  color: #ffffff;
+}
+
+/* Screnn */
+.dark-theme .screen_loading {
+  background-color: #0a081e;
+}
+
+/* Blur */
+.dark-theme .home_title::after,
+.dark-theme .about_title::after,
+.dark-theme .faqs_item-title::before,
+.dark-theme .ps5_list::after {
+  background: radial-gradient(
+    53.9% 53.9% at 77.01% 30.21%,
+    #2314b5 0%,
+    #140d59 100%
+  );
+}
+
+/* Controllers */
+.dark-theme .ps5_controller h1 {
+  color: #ffffff;
+}
+
+.dark-theme .ps5_controller h1 {
+  color: #ffffff;
+}

@@ -1,0 +1,97 @@
+.functions_container {
+  margin-top: 6.25rem;
+}
+
+.functions_data {
+  background: var(--background-gray);
+  border: 0.0625rem solid var(--gray-color);
+  border-radius: 1.5625rem;
+  position: relative;
+}
+
+.functions_title {
+  margin-top: 2.5rem;
+  text-align: center;
+  color: var(--title-color);
+  font-family: var(--tittle-font);
+  font-weight: var(--font-semi-bold);
+  font-size: var(--title-font-size);
+}
+
+.functions_title-secondary {
+  color: var(--primary-color);
+}
+
+.functions_subtitle {
+  margin-top: 1.5625rem;
+  margin-bottom: 0.9375rem;
+  text-align: center;
+  font-size: var(--normal-font-size);
+  font-family: var(--paragraphy-font);
+  font-weight: var(--font-regular);
+  color: var(--paragraphy-color-light);
+}
+
+.functions_list-container {
+  display: grid;
+  gap: 1.875rem;
+  padding: 2.5rem 3.125rem 2.5rem 3.125rem;
+}
+
+.functions_list {
+  display: grid;
+  padding: 1.9375rem 1.9375rem 1.9375rem 1.9375rem;
+  background: var(--background-gray-secondary);
+  border: 0.0625rem solid var(--gray-color);
+  border-radius: 1.9375rem;
+  text-align: center;
+}
+
+.functions_icons {
+  font-size: 3.375rem;
+  transition: 0.3s;
+  color: var(--primary-color);
+}
+
+.functions_list:hover .functions_icons {
+  transform: translateY(-0.35rem);
+}
+
+.functions_icons-title {
+  font-family: var(--tittle-font);
+  font-weight: var(--font-semi-bold);
+  font-size: var(--normal-font-size);
+  color: var(--title-color);
+  margin-top: 1.25rem;
+  margin-bottom: 1.875rem;
+}
+
+.functions_img {
+  max-width: 104px;
+  margin: 0 auto;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 576px) {
+  .functions_list-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 767px) {
+  .functions_list-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+  .functions_list {
+    padding: 3.1875rem 0.625rem 2.6875rem 0.625rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .functions_list-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .functions_data::after {
+    height: 650px;
+  }
+}
